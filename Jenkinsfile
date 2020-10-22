@@ -44,7 +44,7 @@ pipeline {
                         nexusUrl: 'http://localhost:8081/nexus',
                         groupId: "org.example",
                         version: "1.0",
-                        repository: 'http://localhost:8081/nexus/#view-repositories;repo1~browsestorage',
+                        repository: 'repo1',
                         credentialsId: 'nexus_id',
                         artifacts: [
                                 [artifactId: 'org.example',
