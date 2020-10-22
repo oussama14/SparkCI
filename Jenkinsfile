@@ -1,11 +1,19 @@
 pipeline {
-    agent Any
+    agent {
+    Any
     }
     stages {
-        stage('Test') {
+        stage("Build") {
             steps {
-                sh 'mvn test'
+                sh "echo Build Application"
             }
         }
     }
-}
+        stage  ("Testing"){
+        steps {
+        sh "mvn test"
+        }
+        }
+
+
+  }
