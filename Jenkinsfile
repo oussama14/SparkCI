@@ -5,16 +5,16 @@ pipeline {
     tools {
         maven "mvn"
     }
-    
+
 
     triggers {
         pollSCM "* * * * *"
     }
 
-    options {
-        timestamps()
-        ansiColor("xterm")
-    }
+//    options {
+//        timestamps()
+//        ansiColor("xterm")
+//    }
 
     parameters {
         booleanParam(name: "RELEASE",
