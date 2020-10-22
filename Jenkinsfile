@@ -48,7 +48,7 @@ pipeline {
                         credentialsId: 'nexus_id',
                         artifacts: [
                                 [artifactId: 'org.example',
-                                 file: "SparkCI-1.0.jar",
+                                 file: "target/SparkCI-1.0.jar",
                                  type: 'jar']
                         ]
 
