@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="oussama" name="StackSpec" tests="4" time="0.022" timestamp="2020-10-22T12:02:51">
+errors="0" failures="0" hostname="oussama" name="org.scalatest.tools.DiscoverySuite" tests="0" time="0.017" timestamp="2020-10-22T15:23:32">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment">
     </property>
@@ -92,18 +92,6 @@ errors="0" failures="0" hostname="oussama" name="StackSpec" tests="4" time="0.02
     <property name="sun.desktop" value="gnome"> </property>
     <property name="sun.cpu.isalist" value=""> </property>
   </properties>
-  <testcase 
-  name="A Stack should pop values in last-in-first-out order" classname="StackSpec" time="0.006">
-</testcase>
-  <testcase 
-  name="A Stack should throw NoSuchElementException if an empty stack is popped" classname="StackSpec" time="0.0">
-</testcase>
-  <testcase 
-  name="A Stack should throw java.lang.NumberFormatException if an empty stack is popped" classname="StackSpec" time="0.001">
-</testcase>
-  <testcase 
-  name="A Stack should output an int of 5" classname="StackSpec" time="0.001">
-</testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

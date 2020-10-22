@@ -24,19 +24,16 @@ pipeline {
 
     stages {
 
-        stage("Build & Deploy SNAPSHOT") {
+        stage("Running Tests") {
             steps {
-                sh "mvn -B deploy"
+                sh "mvn test"
             }
         }
 
-        stage("Release") {
-            when {
-                expression { params.RELEASE }
-            }
+        stage("Install Jar ") {
             steps {
-                sh "mvn -B release:prepare"
-                sh "mvn -B release:perform"
+                sh "mvn clean"
+                sh "mvn install"
             }
         }
 
